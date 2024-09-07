@@ -1,8 +1,19 @@
+[tool.poetry]
+name = "pymdown-extensions"
+version = "0.1.0"
+description = "Extension pack for Python Markdown."
+authors = ["andy <andy.chu.cs@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Markdown = "^3.6"
+pytest = "^8.3.2"
+pyyaml = "^6.0.2"
+
 [build-system]
-requires = [
-    "hatchling>=0.21.1",
-]
-build-backend = "hatchling.build"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "pymdown-extensions"
@@ -73,6 +84,8 @@ include = [
 include = [
     "/pymdownx",
 ]
+
+
 
 [tool.hatch.metadata.hooks.custom]
 
